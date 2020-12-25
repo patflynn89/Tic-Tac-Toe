@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-Simple Tic-Tac_toe Game build with Vanilla JavaScript
+Simple Tic-Tac-Toe Game build with Vanilla JavaScript
