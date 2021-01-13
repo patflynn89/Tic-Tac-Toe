@@ -1,0 +1,60 @@
+
+* {
+    position: relative;
+
+}
+
+.gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 480px;
+    margin: auto;
+}
+
+.cell {
+    width: 33.333333%;
+    height: 33.33333%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+h1.heading {
+    color: green;
+    text-align: center;
+}
+
+button.startButton {
+    left: 47%;
+    margin-bottom: 2em;
+    cursor: grabbing;
+
+}
+
+.cell:nth-child(odd) {
+    background-color: #d3d3d370;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
