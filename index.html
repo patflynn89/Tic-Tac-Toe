@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Tic Tac Toe</title>
   </head>
   <body>
@@ -13,16 +14,17 @@
       <button class="startButton" onclick="endGame()">End this Shit!</button>
     </div>
     <div class="gameBoard">
-      <div class="cell" id="cell1">Cell1</div>
-      <div class="cell" id="cell2">Cell2</div>
-      <div class="cell" id="cell3">Cell3</div>
-      <div class="cell" id="cell4">Cell4</div>
-      <div class="cell" id="cell5">Cell5</div>
-      <div class="cell" id="cell6">Cell6</div>
-      <div class="cell" id="cell7">Cell7</div>
-      <div class="cell" id="cell8">Cell8</div>
-      <div class="cell" id="cell9">Cell9</div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell1"></div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell2"></div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell3"></div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell4"></div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell5"></div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell6"></div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell7"></div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell8"></div>
+      <div class="cell" onclick="placeShape(this.id)" id="cell9"></div>
     </div>
   </body>
   <script src="logic.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </html>
