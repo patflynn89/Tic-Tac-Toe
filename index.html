@@ -8,7 +8,11 @@
 </head>
 <body>
     <h1 class="heading">Tic Tac Toe is awesome man !</h1>
-    <button class="startButton" onclick="startFunction()">Start !</button>
+    <div class="buttons">
+    <button class="startButton" onclick="startGame()">Start !</button>
+    <button class="startButton" onclick="endGame()">End this Shit!</button>
+    
+</div>
     <div class="gameBoard">
         <div class="cell" id="cell1">Cell1</div>
         <div class="cell" id="cell2">Cell2</div>
@@ -21,4 +25,5 @@
         <div class="cell" id="cell9">Cell9</div>      
     </div>
 </body>
+<script src="logic.js" defer></script>
 </html>

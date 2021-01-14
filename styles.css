@@ -15,7 +15,7 @@
 .cell {
     width: 33.333333%;
     height: 33.33333%;
-    border: 1px solid blue;
+    border: 2px solid black;
     box-sizing: border-box;
 }
 
