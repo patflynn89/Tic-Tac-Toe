@@ -11,6 +11,9 @@ let gameStarted = false;
 let clickCounter = 0;
 let xCounter = 0;
 let circleCounter = 0;
+let gameBoard = [['', '', ''],
+                 ['', '', ''],
+                 ['', '', '']];
 
 /**
  * Start function
@@ -56,4 +59,3 @@ function placeShape(clickedID) {
         
     }
 }
-
