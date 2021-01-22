@@ -24,11 +24,17 @@ h1.heading {
     text-align: center;
 }
 
-button.startButton {
+button {
     left: 44%;
     margin-bottom: 2em;
     cursor: grabbing;
+    background-color: white;
+    color: black;
+}
 
+button:hover {
+    background-color: black;
+    color: white;
 }
 
 .cell:nth-child(odd) {
