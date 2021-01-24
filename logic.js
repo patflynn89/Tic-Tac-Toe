@@ -18,15 +18,15 @@ let xCounter = 0;
 let circleCounter = 0;
 
 //All the winning combinations of the gameboard
-const winningCombination = [['cell1', 'cell2', 'cell3'],    //go with for-loop and check if the first one is cell1 or cell4 or cell7                  
-                            ['cell4', 'cell5', 'cell6'],    //check if array.contents("cell1", "cell2"....)
+const winningCombination = [['cell1', 'cell2', 'cell3'],
+                            ['cell4', 'cell5', 'cell6'],
                             ['cell7', 'cell8', 'cell9'],           
                             
-                            ['cell1', 'cell4', 'cell7'],    //go with for-loop and check if the first one is cell1 or cell2 or cell3       
+                            ['cell1', 'cell4', 'cell7'], 
                             ['cell2', 'cell5', 'cell8'],           
                             ['cell3', 'cell6', 'cell9'],           
                             
-                            ['cell1', 'cell5', 'cell9'],    //go with for-loop and check if the first one is cell1 or cell3
+                            ['cell1', 'cell5', 'cell9'],   
                             ['cell3', 'cell5', 'cell7']]           
 
 /**
@@ -69,8 +69,7 @@ function handleClick(event) {
         if (player1Turn && ((clickCounter === 0) || (clickCounter % 2) === 0)) {
             document.getElementById(event.target.id).appendChild(x[xCounter]);
             //Store it in const id    
-            const id = event.target.id;;
-            console.log(id);
+            const id = event.target.id;
             placedXes.push(id);
             clickCounter++;
             xCounter++;
@@ -80,8 +79,7 @@ function handleClick(event) {
             player1Turn = false;
         } else {
             document.getElementById(event.target.id).appendChild(circle[circleCounter]);
-            const id = event.target.id;;
-            console.log(id);
+            const id = event.target.id;
             placedCircles.push(id);
             clickCounter++;
             circleCounter++;
@@ -97,7 +95,7 @@ function handleClick(event) {
 /**
  * Add eventlisteners and place the Shapes
  */
-function addListeners(move) {
+function addListeners() {
     let tmpCells;
     for (let i = 1; i <= 9; i++) {
         tmpCells = "cell" + i;
@@ -107,7 +105,7 @@ function addListeners(move) {
 
 /**
  * Checks if there's already a winner
- * @param {Array} move 
+ * @param {} move The delivered move of the player
  */
 function checkGame(move) {
     if ((move.includes("cell1") && move.includes("cell2") && move.includes("cell3")) ||
@@ -127,6 +125,8 @@ function checkGame(move) {
             window.location.reload();
         }
         
+    } else if (move.length == 5) {
+        alert("Oh man, it's a fucking draw !");
     }
     
 }
